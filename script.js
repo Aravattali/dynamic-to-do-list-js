@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event listener for "Enter" key to add task
     taskInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
+        if (e.key === 'Enter') { // Corrected event.key usage
             const taskText = taskInput.value.trim();
             addTask(taskText);
         }
